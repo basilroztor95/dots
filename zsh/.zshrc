@@ -44,7 +44,7 @@ autoload -U colors
 colors
 
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' actionformats "%{$fg_bold[green]%}%b%{$reset_color%} (%{$fg_bold[red]%}%a%{$reset_color%}) %m%u%c%{$reset_color%}%{$fg_bold[green]%}%{$reset_color%}"
+zstyle ':vcs_info:*' actionformats "%{$fg_bold[green]%}%b%{$reset_color%} (%{$fg_bold[red]%}%a%{$reset_color%}) %m%u%c%{$reset_color%} %{$fg_bold[green]%}%{$reset_color%}"
 zstyle ':vcs_info:git*' formats "%{$fg_bold[green]%}%b%{$reset_color%}%m%u%c%{$reset_color%}%{$fg_bold[green]%}%{$reset_color%} "
 #zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
 zstyle ':vcs_info:*' stagedstr "%{$fg_bold[green]%}+%{$reset_color%}"
