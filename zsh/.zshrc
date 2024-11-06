@@ -9,7 +9,8 @@ setopt prompt_subst
 zstyle ':vcs_info:git:*' formats ' %b'  # Add spaces around the branch name
 
 # Define your prompt
-PROMPT='%B%F{yellow}%T%f %F{blue}%~%f%F{green}${vcs_info_msg_0_}%f %#%b '  # Ensure there's space before the directory and prompt symbols
+#PROMPT='%B%F{yellow}%T%f %F{blue}%~%f%F{green}${vcs_info_msg_0_}%f %#%b '  # Ensure there's space before the directory and prompt symbols
+PROMPT='%B%(?.%F{yellow}%T.%F{red}%T%f) %F{blue}%~%f%F{green}${vcs_info_msg_0_}%f %#%b '  # Ensure there's space before the directory and prompt symbols
 #autoload -U colors && colors
 
 alias ls='ls --color=auto'
